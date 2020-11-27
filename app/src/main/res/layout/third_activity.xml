@@ -19,8 +19,7 @@
             android:text="andorid"
             android:textColor="@color/red"
             android:textSize="30sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toTopOf="@+id/grid" />
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/gokul"
@@ -79,5 +78,6 @@
             android:shadowColor="@color/colorPrimaryDark"
             android:layout_margin="10dp"/>
     </LinearLayout>
+
 
 </androidx.core.widget.NestedScrollView>

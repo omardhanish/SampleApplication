@@ -3,6 +3,7 @@ package com.omardhanishdon.sampleapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.rahul).setOnClickListener {
             val i = Intent(this , SecondActiviy::class.java)
+            startActivity(i)
+        }
+
+        findViewById<Button>( R.id.showList).setOnClickListener {
+            val i = Intent(this , ListActivity::class.java)
             startActivity(i)
         }
 

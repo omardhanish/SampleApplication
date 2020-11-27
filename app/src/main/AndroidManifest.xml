@@ -20,6 +20,8 @@
 
         <activity android:name=".SecondActiviy"/>
 
+        <activity android:name=".ListActivity"/>
+
     </application>
 
 </manifest>
