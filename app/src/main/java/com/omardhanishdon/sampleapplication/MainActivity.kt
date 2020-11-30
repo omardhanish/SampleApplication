@@ -3,9 +3,7 @@ package com.omardhanishdon.sampleapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 
 // inheritance
 class MainActivity : AppCompatActivity() {

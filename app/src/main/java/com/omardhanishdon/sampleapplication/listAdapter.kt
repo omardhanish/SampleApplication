@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class listAdapter(val context: Context) : RecyclerView.Adapter<listAdapter.ViewHolder>() {
+class listAdapter(val context: Context , var list : MutableList<ListActivity.Information>) : RecyclerView.Adapter<listAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHolder {
@@ -15,13 +15,13 @@ class listAdapter(val context: Context) : RecyclerView.Adapter<listAdapter.ViewH
     }
 
     override fun getItemCount(): Int {
-        return 100
+        return list.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.tv1.text = "Gokul " + position
-            holder.tv2.text = "Number " + position
-            holder.tv3.text = "Date " + position
+        holder.tv1.text = list.get(position).name
+        holder.tv2.text = list.get(position).number
+        holder.tv3.text = list.get(position).date
     }
 
 
